@@ -1,0 +1,36 @@
+Components
+
+In all cases, any user may have multiple roles. For example, a driver may also have a kitchen which means that the driver may be a cook. Also, a driver may also be a customer or member of other kitchens.
+
+In this single-page application, there is one navigation which is dynamic. It changes depending on which page is current. For example, if on the home page, there may be menu items such as file, edit, about, etc. and no back button. However, on a different page such as customers, there may be menu items such as view, edit, add, etc. And there may be a return button which will return the user to the page from which the customer page was accessed. This behavior pertains to submenus also. 
+
+*Driver-component for handling drivers crud.
+*Memberships-A cook may maintain memberships to their personal kitchen. Members may also be cooks or drivers. Members receive specials, invites and other amenities. 
+*Customers-the purpose of the customers component is to crud customers. it may no longer be necessary. Make that determination.
+*Guest-the system must be able to handle customers who are not members of a kitchen.
+*cookDashboard-The cookdashboard component should provide the cook, i.e. the owner of a kitchen, the view their kitchen's statistics.
+*allDashboard-I don't know what this component's purpose was. Extract that data from the files/data provided in earlier chats, then make a determination as to whether or not it is still needed.
+*admin-A component is needed for administrators of the entire system. Admins must be able to crud all data, provide authentication and authorization, etc.
+*Contacts-this component is for performing crud operations on contacts. Contacts are persons to whom a cook/kitchen owner wishes to send invites and other communications. A means by which to communicate with a contact is necessary such as email, phone, etc. Later, in the Invitations component, a list of contacts should be available as well as a means by which to identify which method of communication will be used.
+*Walkthrough-this component provides a walkthrough of the system to potential cook/kitchen owners, drivers, customers, etc.
+*CookProfile-this component may be combined with other components. Its purpose is to provide a means for cooks to crud their profile.
+*Receipt-this component is for handling the customers receipt after a transaction has been completed regardless of the app's ecommerce system.
+*Delivery-a component for handling the delivery of food either by pick up or by driver. This component must be, in some way, connected to the driver component.
+*QuickStart-a component for providing a means for cooks to setup a kitchen without handling every single detail; only the essential/required details needed for to get the cook up and running and selling food.
+*FoodTypes-a component for categorizing different food types. Food types are not required but cooks may find a need to categorize their food items.
+*Menus-A component for handling dynamic menus. It must be able to handle crud operations. Users may add food items (generally called 'sides'), platters (which are meals, a collection of food items as a single unit), drinks, and extra items.
+*mainmenu
+*Platters-a component for handling crud operations for platters. a platter is a single unit which consists of a collection of food items, a price, some nutritional information, etc.
+*Orders-a component for handling orders. Orders consist of order details and order line items along with calculations, etc.
+*Profile-the profile component may be used to handle a site user's profile. Consider whether it is still necessary. Also consider that a person may be a guest, cook, driver, etc. Profiles have a name which could be a business name; some cooks may have multiple business names, may have multiple phone numbers, photos, email addresses, addresses and different hours for different locations.
+*A cook may cook at multiple locations at the same time. Cooks sometimes only cook or sell food on specific dates at specific times.
+*ImageHandler-the ImageHandler component provides image manipulation and management services to be used throughout the app.
+*Splash-this component is no longer needed. Instead provide a ui/ux front end featuring cooks and food, etc.
+*Invitations-crud, invitations are sent to prospective members and to individuals who may have been previous customers.
+*PublicPreview-Cooks are essentially creating and branding their own kitchen. While they are doing so, it is convenient for the cook to view the kitchen site they are creating at any time during the creation process.
+*AddFoodActivity-this component may no longer be required. It was used to give cooks the ability to add food to the db. However, for the modern application, the food component should handle crud processing.
+*Refund-The refund component was used to handle refunds. It must be recreated from scratch such that it can handle any ecommerce platform.
+*ShoppingCart-this component is a standard shopping cart.
+*The layout of the app should be a dynamic header which has a dynamic title, menu, etc. Then a dynamic body component in which page content will appear. And a dynamic footer.
+*Login, Register-standard
+*The app should also have the following: contact us, about us, how it works
